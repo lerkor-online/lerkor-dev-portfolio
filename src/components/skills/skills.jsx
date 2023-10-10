@@ -1,5 +1,5 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react"
+import Image from "next/image"
 
 const skills = [
     {
@@ -92,21 +92,21 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div className='grid grid-cols-7 gap-6 bg-black w-8/12'>
+        <div className="grid grid-cols-7 gap-6 bg-black w-8/12">
   {skills.map(element => (
     <div
       key={element.id}
-      className=' w-28 h-32 flex justify-around flex-col p-4 shadow-[#7209b7] bg-gradient-to-b from-gray-500 via-gray-100 to-gray-500 shadow-2xl rounded-lg relative hover:transform hover:-translate-y-2 transition-transform duration-300'
+      className=" w-28 h-32 flex justify-around flex-col p-4 shadow-[#7209b7] bg-gradient-to-b from-gray-500 via-gray-100 to-gray-500 shadow-2xl rounded-lg relative hover:transform hover:-translate-y-2 transition-transform duration-300"
     >
       <img
-      className='flex items-center justify-center'
+      className="flex items-center justify-center"
         src={element.imageUrl}
         alt={element.name}
         width={56}
         height={56}
         />
-      <span className='mt-2 text-custom text-shadow-custom font-bold'>{element.name}</span>
-      <div className='absolute inset-0 bg-purple-500 opacity-0 rounded-lg hover:opacity-50 transition-opacity duration-300'></div>
+      <span className="mt-2 text-custom text-shadow-custom font-bold">{element.name}</span>
+      <div className="absolute inset-0 bg-purple-500 opacity-0 rounded-lg hover:opacity-50 transition-opacity duration-300"></div>
         </div>
   ))}
 </div>

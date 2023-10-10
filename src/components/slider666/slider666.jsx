@@ -9,14 +9,14 @@ import { EffectCoverflow, Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import './styles.css'
+import "./styles.css"
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 import Image from "next/image";
 
 const Slider666 = () => {
@@ -86,7 +86,7 @@ const Slider666 = () => {
 
   return (
     <Swiper
-    effect={'coverflow'}
+    effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3}

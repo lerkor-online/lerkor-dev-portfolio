@@ -1,5 +1,5 @@
-import React from 'react'
-import NavEffect from '../navEffect/navEffect'
+import React from "react"
+import NavEffect from "../navEffect/navEffect"
 
 
 const Nav = () => {
