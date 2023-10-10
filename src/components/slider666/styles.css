@@ -1,0 +1,32 @@
+#app { height: 100% }
+html,
+
+.swiper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: black;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.swiper-slide-visible a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide-active a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.swiper-slide img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    box-shadow: 1px #7209b7;
+}
