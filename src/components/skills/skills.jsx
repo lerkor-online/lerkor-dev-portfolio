@@ -74,7 +74,7 @@ const skills = [
     },
     {
       id: 15,
-      name: "Node.js 15",
+      name: "Node.js",
       imageUrl: "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696957034/Logos%20Portfolio/rcembmg5n01u3yiyerky.svg",
     },
     {
