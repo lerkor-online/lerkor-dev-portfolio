@@ -34,7 +34,7 @@ const skills = [
     },
     {
       id: 7,
-      name: "Typescript",
+      name: "React",
       imageUrl: "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696957037/Logos%20Portfolio/f4qpucqpbb5msd11y3ku.svg",
     },
     {
