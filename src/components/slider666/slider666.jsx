@@ -24,64 +24,63 @@ const Slider666 = () => {
     {
       id: "1",
       image:
-        "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/Coderhouse_hgiuqd.jpg",
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Coderhouse_hgiuqd",
     },
     {
       id: "2",
       image:
-        "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/Certificado_-_Curso_profesional_de_React_tndc6p.jpg",
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Certificado_-_Curso_profesional_de_React_tndc6p",
     },
     {
       id: "3",
       image:
-      "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952309/Lerkor-dev-Henry_jfdcbh.jpg",
+      "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Lerkor-dev-Full-Stack",
     },
     {
         id: "4",
         image:
-        "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/TA_Lerkor_jtbmfh.jpg",
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Lerkor-dev-TA",
     },
     {
-        id: "5",
-        image:
-          "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/Coderhouse_hgiuqd.jpg",
-      },
-      {
-        id: "6",
-        image:
-          "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/Certificado_-_Curso_profesional_de_React_tndc6p.jpg",
-      },
-      {
-        id: "7",
-        image:
-        "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952309/Lerkor-dev-Henry_jfdcbh.jpg",
-      },
-      {
-          id: "8",
-          image:
-          "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/TA_Lerkor_jtbmfh.jpg",
-      },
-      {
-        id: "9",
-        image:
-          "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/Coderhouse_hgiuqd.jpg",
-      },
-      {
-        id: "10",
-        image:
-          "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/Certificado_-_Curso_profesional_de_React_tndc6p.jpg",
-      },
-      {
-        id: "11",
-        image:
-        "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952309/Lerkor-dev-Henry_jfdcbh.jpg",
-      },
-      {
-          id: "12",
-          image:
-          "https://res.cloudinary.com/dqcn7idzj/image/upload/v1696952308/TA_Lerkor_jtbmfh.jpg",
-      },
-    
+      id: "5",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Coderhouse_hgiuqd",
+    },
+    {
+      id: "6",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Certificado_-_Curso_profesional_de_React_tndc6p",
+    },
+    {
+      id: "7",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Lerkor-dev-Full-Stack",
+    },
+    {
+      id: "8",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Lerkor-dev-TA",
+    },
+    {
+      id: "9",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Coderhouse_hgiuqd",
+    },
+    {
+      id: "10",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Certificado_-_Curso_profesional_de_React_tndc6p",
+    },
+    {
+      id: "11",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Lerkor-dev-Full-Stack",
+    },
+    {
+      id: "12",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/f_auto,q_auto/Lerkor-dev-TA",
+    }    
   ];
 
   return (

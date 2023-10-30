@@ -2,7 +2,7 @@ import React from "react"
 import NavEffect from "../navEffect/navEffect"
 
 
-const Nav = () => {
+const Nav = ({handleOpen}) => {
     return (
         <main>
             <header
@@ -15,8 +15,8 @@ const Nav = () => {
                         <li>
                             <a href="#">Mi Bio</a>
                         </li>
-                        <li>
-                            <a href="#skills">Skills</a>
+                        <li onClick={handleOpen}>
+                            <a className=" cursor-pointer" >Skills</a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCwDTMggF22osYfyiEikUCOQ">Proyectos</a>

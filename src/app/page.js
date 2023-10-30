@@ -1,14 +1,29 @@
+"use client"
+
+import { useState } from 'react';
+
 import Nav from '@/components/nav/nav';
 import Skills from '@/components/skills/skills';
 import Slider666 from '@/components/slider666/slider666';
 
 export default function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen)
+  } 
+
+  const handleClose = () => { 
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div>
-      <Nav />
-      <div className='bg-black mt-5 text-white h-96 flex items-center justify-center flex-col'>
-        <div className='flex gap-6'>
-          <h1>Hi, I&apos;m Lerkor-dev</h1>
+      <Nav handleOpen={handleOpen} />
+      <div className='bg-black text-white flex items-center justify-center flex-col'>
+        <div className='flex flex-col gap-6 w-6/12'>
+        <img src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1698509624/Logos%20Portfolio/rqbl5r2npjziz36cic4a.svg"/>
           <h2>Front-End Developer</h2>
         </div>
         <div className="flex space-x-4 mt-7">
@@ -48,10 +63,9 @@ export default function Home() {
           Descargar CV
         </a>
       </div>
-      <h1 className='flex text-center text-4xl items-center justify-center bg-black text-white'>Skills</h1>
-      <div className='flex justify-center bg-black p-10'>
-        <Skills />
-      </div>
+      {isOpen && <div className='gap-6 mt-5 p-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 flex items-center justify-center z-20'>
+        <Skills handleClose={handleClose}/>
+      </div>}
       <div className='h-1/2'>
         <h1 className='flex pb-5 text-center text-4xl items-center justify-center bg-black text-white'>Certificados</h1>
         <Slider666 />
