@@ -22,8 +22,11 @@ export default function Home() {
     <div>
       <Nav handleOpen={handleOpen} />
       <div className='bg-black text-white flex items-center justify-center flex-col'>
-        <div className='flex flex-col gap-6 w-6/12'>
-        <img src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1698509624/Logos%20Portfolio/rqbl5r2npjziz36cic4a.svg"/>
+        <div className='flex flex-col justify-center items-center gap-6 w-6/12'>
+        <img 
+        src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1698509624/Logos%20Portfolio/rqbl5r2npjziz36cic4a.svg"
+        className="w-3/4"
+        />
           <h2>Front-End Developer</h2>
         </div>
         <div className="flex space-x-4 mt-7">
