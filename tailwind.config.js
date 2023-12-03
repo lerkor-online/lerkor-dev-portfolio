@@ -12,6 +12,22 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        light: {
+          primary: '#40010D',
+          secondary: '#A6243C',
+          tertiary: '#BF2517',
+          background: '#F2F2F2',
+          text: '#0D0D0D',
+        },
+        dark: {
+          primary: '#9305F2',
+          secondary: '#4703A6',
+          tertiary: '#1D0259',
+          background: '#150140',
+          text: '#090126',
+        },
+      },
       textShadow: {
         // Nombre de la clase
         'custom': '2px 2px 4px rgba(168, 85, 247, 0.5)', // Personaliza la sombra de texto aquí

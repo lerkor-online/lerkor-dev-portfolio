@@ -1,8 +1,12 @@
-import React from "react"
-import NavEffect from "../navEffect/navEffect"
+"use client"
+
+import { useAppContext } from '@/context/context';
+import React from "react";
+import NavEffect from "../navEffect/navEffect";
 
 
-const Nav = ({handleOpen}) => {
+const Nav = () => {
+    const { isOpenSkills, handleOpenSkills } = useAppContext()
     return (
         <main>
             <header
@@ -13,9 +17,9 @@ const Nav = ({handleOpen}) => {
                 <nav className="flex flex-grow justify-center">
                     <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:text-gray-50">
                         <li>
-                            <a href="#">Mi Bio</a>
+                            <a href="#mibio">Mi Bio</a>
                         </li>
-                        <li onClick={handleOpen}>
+                        <li onClick={handleOpenSkills}>
                             <a className=" cursor-pointer" >Skills</a>
                         </li>
                         <li>
@@ -23,6 +27,9 @@ const Nav = ({handleOpen}) => {
                         </li>
                         <li>
                             <a href="#certificates">Certificados</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contacto</a>
                         </li>
                         <li>
                             <a href="#">
