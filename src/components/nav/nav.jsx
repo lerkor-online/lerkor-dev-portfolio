@@ -11,7 +11,7 @@ const Nav = () => {
         <main>
             <header
                 id="landing-header"
-                className="py-4  px-10 flex item-center fixed top-0 w-full justify-between bg-neutral-900 border-b-[3px] border-[#7209b7] z-40 "
+                className="py-4  px-10 flex item-center fixed top-0 w-full justify-between bg-neutral-900 border-b-[3px] border-light-redbold z-40 "
             >
 
                 <nav className="flex flex-grow justify-center">

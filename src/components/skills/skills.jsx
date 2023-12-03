@@ -96,7 +96,7 @@ const skills = [
 const Skills = () => {
   const { handleCloseSkills } = useAppContext();
     return (
-        <div className="bg-black mt-6 ">
+        <div className=" mt-6 ">
           <div className=" flex justify-end items-end bg-gray-900 rounded-t-sm">
 
           <button 
@@ -107,14 +107,14 @@ const Skills = () => {
 </svg>
           </button>
           </div>
-          <div className="border-t-[1px] border-[#7209b7]">
+          <div className="border-t-[3px] border-light-redbold">
 
-          <h1 className='flex text-center text-4xl items-center justify-center bg-black text-white '>Skills</h1>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6 bg-black mt-4 p-1 ">
+          <h1 className='flex text-center text-4xl items-center justify-center text-white '>Skills</h1>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6 mt-4 p-1 ">
   {skills.map(element => (
     <div
     key={element.id}
-    className=" w-28 h-32 flex justify-around flex-col p-4 shadow-[#7209b7] bg-gradient-to-b from-gray-500 via-gray-100 to-gray-500 shadow-2xl rounded-lg relative hover:transform hover:-translate-y-2 transition-transform duration-300"
+    className=" w-28 h-32 flex justify-around flex-col p-4 shadow-light-blackcustom bg-gradient-to-b from-gray-500 via-gray-100 to-gray-500 shadow-2xl rounded-lg relative hover:transform hover:-translate-y-2 transition-transform duration-300"
     >
       <img
       className="flex items-center justify-center"

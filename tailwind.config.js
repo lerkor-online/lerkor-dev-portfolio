@@ -14,11 +14,11 @@ module.exports = {
       },
       colors: {
         light: {
-          primary: '#40010D',
-          secondary: '#A6243C',
-          tertiary: '#BF2517',
-          background: '#F2F2F2',
-          text: '#0D0D0D',
+          redblack: '#40010D',
+          redlight: '#A6243C',
+          redbold: '#BF2517',
+          whitecustom: '#F2F2F2',
+          blackcustom: '#0D0D0D',
         },
         dark: {
           primary: '#9305F2',
