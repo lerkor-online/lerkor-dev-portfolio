@@ -31,7 +31,9 @@ const NavEffect = () => {
         <div
           id="menu-backdrop"
           className=" 
-                absolute bg-gradient-to-r from-[#b5179e] via-[#7209b7] to-[#4361ee] backdrop-blur-lg rounded
+                absolute 
+                bg-gradient-to-b from-light-redlight dark:from-dark-100 via-light-redbold dark:via-dark-200 to-light-redblack dark:to-light-dark-300 
+                backdrop-blur-lg rounded
                 translate-x-[var(--left)] translate-y-[var(--top)]
                 left-0 top-0
                 w-[var(--width)] h-[var(--height)]

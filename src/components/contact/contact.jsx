@@ -16,8 +16,8 @@ const Contact = () => {
   const [status, setStatus] = useState({});
 
   return (
-    <div className='bg-gray-100 h-screen flex justify-center items-center'>
-      <div className='flex flex-col md:flex-row bg-white p-8 rounded-lg shadow-md'>
+    <div className='bg-gray-100 dark:bg-light-blackcustom h-screen flex justify-center items-center'>
+      <div className='flex flex-col md:flex-row bg-white dark:bg-dark-200 p-8 rounded-lg shadow-md dark:shadow-dark-500'>
         <Image
           src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1701575286/contact_us_tnesqq.svg"
           alt="logo-contact"
@@ -25,7 +25,7 @@ const Contact = () => {
           height={420}
         />
         <div className='lg:ml-8'>
-          <h1 className='text-3xl font-bold mb-4'>Contacto</h1>
+          <h1 className='text-3xl font-bold mb-4 dark:text-light-whitecustom'>Contacto</h1>
           <form className='space-y-4'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
               <input
@@ -55,7 +55,7 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className='w-full md:w-auto bg-blue-500 text-white p-2 rounded hover:bg-blue-600'
+              className='w-full md:w-auto bg-light-redlight dark:bg-dark-600 font-bold text-light-whitecustom dark:text-dark-500 dark:hover:text-light-whitecustom p-2 rounded hover:bg-light-blackcustom dark:hover:bg-dark-100'
             >
               Enviar
             </button>

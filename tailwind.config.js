@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -21,11 +22,14 @@ module.exports = {
           blackcustom: '#0D0D0D',
         },
         dark: {
-          primary: '#9305F2',
-          secondary: '#4703A6',
-          tertiary: '#1D0259',
-          background: '#150140',
-          text: '#090126',
+          100: '#9305F2',
+          200: '#4703A6',
+          300: '#1D0259',
+          400: '#150140',
+          500: '#090126',
+          600: '#2EF2DF',
+          700: '#3316F2',
+          800: '#200F8C',
         },
       },
       textShadow: {
