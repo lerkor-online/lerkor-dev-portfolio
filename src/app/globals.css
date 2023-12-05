@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'LerkorDevFont';
+  src: url('/fonts/lerkor-dev-font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+.lerkor-title {
+  /* Utiliza la fuente personalizada en el cuerpo del documento */
+  font-family: 'LerkorDevFont', sans-serif;
 }

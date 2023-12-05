@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <div className='h-screen bg-light-whitecustom dark:bg-light-blackcustom'>
             <section id="landing-header" className='h-screen flex justify-center items-center flex-col gap-6'>
-                <div className='m-5'>
+                <div className='m-5 z-10'>
                     <Image
                         src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1701583372/Logos%20Portfolio/lerkor-dev-logo_yc8nec.png"
                         alt="Lerkor-logo"
@@ -25,7 +25,7 @@ const Home = () => {
                         className='dark:invert'
                     />
                 </div>
-                <div className='flex flex-wrap gap-6'>
+                <div className='flex flex-wrap gap-6 z-10'>
                     <button className=' bg-light-redlight dark:bg-dark-100 hover:bg-light-blackcustom dark:hover:bg-dark-700 shadow-lg text-light-whitecustom dark:hover:text-dark-600 dark:shadow-dark-300 dark:hover:shadow-dark-600 font-bold py-2 px-4 rounded dark:hover:border-dark-800 dark:border-2 dark:border-dark-300 dark:animate-bounce delay-100 '>
                         <a href="https://www.instagram.com/lerkor_online" target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -48,6 +48,7 @@ const Home = () => {
                         </a>
                     </button>
                 </div>
+                    <h1 className='lerkor-title text-light-whitecustom bg-clip-text text-transparent dark:bg-gradient-to-r from-dark-100 via-dark-600 to-dark-700 text-9xl absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-3/4 text-center z-0 animate-pulse'>Front End Dev</h1>
             </section>
             <section id="mibio">
                 <Mibio />
