@@ -17,7 +17,7 @@ module.exports = {
         light: {
           redblack: '#40010D',
           redlight: '#A6243C',
-          redbold: '#BF2517',
+          redbold: '#F20505',
           whitecustom: '#F2F2F2',
           blackcustom: '#0D0D0D',
         },
