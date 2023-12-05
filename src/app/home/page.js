@@ -22,7 +22,7 @@ const Home = () => {
                         alt="Lerkor-logo"
                         width={420}
                         height={420}
-                        className='dark:invert'
+                        className='lerkor-logo'
                     />
                 </div>
                 <div className='flex flex-wrap gap-6 z-10'>
@@ -48,7 +48,11 @@ const Home = () => {
                         </a>
                     </button>
                 </div>
-                    <h1 className='lerkor-title text-light-whitecustom bg-clip-text text-transparent dark:bg-gradient-to-r from-dark-100 via-dark-600 to-dark-700 text-9xl absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-3/4 text-center z-0 animate-pulse'>Front End Dev</h1>
+                <div className=' absolute left-1/2 -translate-x-1/2 top-40 text-center z-0 text-9xl'>
+
+                    <h1 className='lerkor-title text-light-whitecustom bg-clip-text text-transparent dark:bg-gradient-to-r from-dark-200 via-dark-100 to-dark-600  '>Front End</h1>
+                    <h1 className='lerkor-title text-light-whitecustom bg-clip-text text-transparent dark:bg-gradient-to-l from-dark-200 via-dark-100 to-dark-700  '>Developer</h1>
+                </div>
             </section>
             <section id="mibio">
                 <Mibio />

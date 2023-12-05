@@ -20,3 +20,7 @@
   /* Utiliza la fuente personalizada en el cuerpo del documento */
   font-family: 'LerkorDevFont', sans-serif;
 }
+
+.dark .lerkor-logo {
+  filter: drop-shadow(0 0 0.666rem #ffffff) invert(1) /* Sombra para el modo oscuro */
+}
