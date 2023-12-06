@@ -3,6 +3,7 @@
 import { useAppContext } from '@/context/context';
 import React from "react";
 import NavEffect from "../navEffect/navEffect";
+import NavBottom from '../navbottom/navbottom';
 
 
 const Nav = () => {
@@ -16,9 +17,8 @@ const Nav = () => {
         <main>
             <header
                 id="landing-header"
-                className="py-4  px-10 flex item-center fixed top-0 w-full justify-between bg-neutral-900 border-b-[3px] border-light-redbold dark:border-dark-100 z-40 "
+                className="py-4  px-10 item-center fixed top-0 w-full justify-between bg-neutral-900 border-b-[3px] border-light-redbold dark:border-dark-100 z-40 lg:block hidden"
             >
-
                 <nav className="flex flex-grow justify-center">
                     <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:text-gray-50">
                         <li>
@@ -61,6 +61,9 @@ Dark Mode
                 </nav>
                 <NavEffect />
             </header>
+            <nav className='fixed bottom-0 left-0 w-screen lg:hidden z-10'>
+                <NavBottom handleDarkMode={handleDarkMode} />
+            </nav>
         </main>
     )
 }
