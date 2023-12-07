@@ -14,7 +14,7 @@ const Home = () => {
     const { isOpenSkills } = useAppContext();
     console.log(isOpenSkills)
     return (
-        <div className='h-screen bg-light-whitecustom dark:bg-light-blackcustom'>
+        <div className=' bg-light-whitecustom dark:bg-light-blackcustom'>
             <section id="landing-header" className='h-screen flex justify-center items-center flex-col gap-6'>
                 <div className='m-5 z-10'>
                     <Image

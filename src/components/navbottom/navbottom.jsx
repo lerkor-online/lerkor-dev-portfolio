@@ -47,7 +47,7 @@ const NavBottom = () => {
   return (
 
 
-    <div class="navigation  bg-gradient-to-b from-light-redlight dark:from-dark-100 via-light-redlight dark:via-dark-200 to-light-redblack dark:to-dark-600">
+    <div class="navigation  bg-gradient-to-b from-light-redlight dark:from-dark-100 via-light-redlight dark:via-dark-300 to-light-redblack dark:to-dark-500">
       <ul>
         <li class="list">
           <button onClick={() => navigateToSection('mibio')}>
@@ -107,7 +107,7 @@ const NavBottom = () => {
             <span class="circle"></span>
           </button>
         </li>
-        <div class="indicator  bg-gradient-to-b from-light-redlight dark:from-dark-100 via-light-redlight dark:via-dark-200 to-light-redblack dark:to-dark-600"></div>
+        <div class="indicator  bg-gradient-to-b from-light-redlight dark:from-dark-100 via-light-redlight dark:via-dark-200 to-light-redblack dark:to-dark-500"></div>
       </ul>
     </div>
 
