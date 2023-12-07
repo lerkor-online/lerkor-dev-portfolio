@@ -9,14 +9,12 @@ import { EffectCoverflow, Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "./styles.css"
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+
+import './styles.css';
+
+import { EffectCards } from 'swiper/modules';
 import Image from "next/image";
 
 const Slider666 = () => {
@@ -85,6 +83,12 @@ const Slider666 = () => {
 
   return (
     <Swiper
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
+        className="mySwiper"
+      >
+    {/* <Swiper
     effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -104,7 +108,7 @@ const Slider666 = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-    >
+    > */}
             {data.map((element) => (
                 <SwiperSlide key={element.id}>
                     <a href={element.image}>
@@ -113,6 +117,7 @@ const Slider666 = () => {
                             alt="Slider"
                             width={420}
                             height={420}
+                            className="p-6"
                         />
                     </a>
                 </SwiperSlide>

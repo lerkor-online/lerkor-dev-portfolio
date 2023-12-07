@@ -61,7 +61,7 @@ Dark Mode
                 </nav>
                 <NavEffect />
             </header>
-            <nav className='fixed bottom-0 left-0 w-screen lg:hidden z-10'>
+            <nav className='fixed bottom-0 left-0 w-screen lg:hidden z-40'>
                 <NavBottom handleDarkMode={handleDarkMode} />
             </nav>
         </main>

@@ -38,15 +38,15 @@
     line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    color: #fff;
+    color: #F2F2F2;
     transition: .5s;
 }
 .navigation ul li.active button .icon {
-    transform: translateY(-32px);
+    transform: translateY(-37px);
 }
 .navigation ul li button .text {
     position: absolute;
-    color: #fff;
+    color: #F2F2F2;
     font-weight: 400;
     font-size: .75em;
     letter-spacing: .05em;
