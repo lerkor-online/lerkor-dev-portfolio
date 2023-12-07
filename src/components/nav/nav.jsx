@@ -17,7 +17,7 @@ const Nav = () => {
         <main>
             <header
                 id="landing-header"
-                className="py-4  px-10 item-center fixed top-0 w-full justify-between bg-neutral-900 border-b-[3px] border-light-redbold dark:border-dark-100 z-40 lg:block hidden"
+                className="py-4  px-10 item-center fixed top-0 w-full justify-between bg-neutral-900 border-b-[3px] border-light-rebstrong dark:border-dark-100 z-40 lg:block hidden"
             >
                 <nav className="flex flex-grow justify-center">
                     <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:text-gray-50">
