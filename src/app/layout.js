@@ -4,14 +4,12 @@ import './globals.css'
 export const metadata = {
   title: 'Lerkor-dev',
   description: 'Front-end Developer',
+  viewport: 'viewport-fit=cover',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html>
-      <head>
-        <meta name="viewport" content="viewport-fit=cover" />
-      </head>
       <body>
         <AppContextProvider>
         {children}
