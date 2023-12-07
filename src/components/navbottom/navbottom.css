@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     border-top: 5px solid #06021b;
 }
 .navigation ul {
@@ -89,24 +89,24 @@
 .indicator::before {
     content: '';
     position: absolute;
-    top: 45%;
+    top: 49%;
     left: -22px;
     width: 20px;
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 2px -2px 0 #06021b;
+    box-shadow: 4px -4px 0 #06021b;
 }
 .indicator::after {
     content: '';
     position: absolute;
-    top: 45%;
+    top: 49%;
     right: -22px;
     width: 20px;
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -2px -2px 0 #06021b;
+    box-shadow: -4px -4px 0 #06021b;
 }
 .navigation ul li:nth-child(1).active~.indicator {
     transform: translateX(calc(70px * 0));
