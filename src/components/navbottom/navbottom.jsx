@@ -28,12 +28,12 @@ const NavBottom = () => {
 
   const navigateToSection = (sectionId) => {
     
-    const isMobile = window.innerWidth <= 600;
+    const isMobile = window.innerWidth <= 1023;
     
     if (isMobile) {
       if (sectionId === 'home') {
         window.scroll({
-          top: 80,
+          top: 100,
           left: 0,
           behavior: 'smooth'
         });
