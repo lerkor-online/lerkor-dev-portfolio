@@ -21,24 +21,27 @@ const NavBottom = () => {
     listItems.forEach((item) => item.addEventListener('click', activeLink));
 
     return () => {
-      // Limpiar los event listeners al desmontar el componente
       listItems.forEach((item) => item.removeEventListener('click', activeLink));
+      navigateToSection('home')
     };
   }, []);
 
   const navigateToSection = (sectionId) => {
-    console.log("Navigating to section:", sectionId);
-  
-    if (sectionId === 'home') {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-    } else {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+    
+    const isMobile = window.innerWidth <= 600;
+    
+    if (isMobile) {
+      if (sectionId === 'home') {
+        window.scroll({
+          top: 80,
+          left: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     }
   };
