@@ -22,8 +22,12 @@ const NavBottom = () => {
 
     return () => {
       listItems.forEach((item) => item.removeEventListener('click', activeLink));
-      navigateToSection('home')
     };
+  }, []);
+
+  useEffect(() => {
+    console.log('se ejecuto el navigate to home')
+    navigateToSection('home');
   }, []);
 
   const navigateToSection = (sectionId) => {
