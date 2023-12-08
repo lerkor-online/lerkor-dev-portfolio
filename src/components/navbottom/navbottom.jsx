@@ -21,7 +21,9 @@ const NavBottom = () => {
     listItems.forEach((item) => item.addEventListener('click', activeLink));
 
     return () => {
+      // Limpiar los event listeners al desmontar el componente
       listItems.forEach((item) => item.removeEventListener('click', activeLink));
+      navigateToSection('home')
     };
   }, []);
 
@@ -32,9 +34,10 @@ const NavBottom = () => {
 
   const navigateToSection = (sectionId) => {
     
-    const isMobile = window.innerWidth <= 1023;
+    const isMobile = window.innerWidth <= 600;
     
     if (isMobile) {
+      console.log("Navigating to section:", sectionId);
       if (sectionId === 'home') {
         window.scroll({
           top: 100,
