@@ -42,10 +42,15 @@ const Slider666 = () => {
     {
       id: "5",
       image:
-        "https://res.cloudinary.com/dqcn7idzj/image/upload/v1703108334/Certificados/Certificado_-_Curso_Profesional_de_Angular_bz2zfy.jpg",
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/v1703108334/Certificados/Certificado_-_Introduccin_al_desarrollo_de_videojuegos_yff4ae.jpg",
     },
     {
       id: "6",
+      image:
+        "https://res.cloudinary.com/dqcn7idzj/image/upload/v1703108334/Certificados/Certificado_-_Curso_Profesional_de_Angular_bz2zfy.jpg",
+    },
+    {
+      id: "7",
       image:
         "https://res.cloudinary.com/dqcn7idzj/image/upload/v1703108334/Certificados/Certificado_-_Bootcamp_de_React_Avanzado_con_Next.js_dbfgni.jpg",
     },
