@@ -1,0 +1,21 @@
+.lerkor-dev {
+    float: left;
+    shape-outside: url(../../../public/Lerkor-dev-profile.png);
+  }
+.text-bio {
+    text-align:justify;
+    font-size: 22px;
+    margin-top: 166px;
+}
+
+@media screen and (max-width: 600px) {
+  .lerkor-dev {
+    float: none;
+  }
+    .text-bio {
+        font-size: 16px;
+        margin: 16px;
+    }
+}
+
+

@@ -8,6 +8,7 @@ import Skills from '@/components/skills/skills';
 import Mibio from '@/components/mibio/mibio';
 import Certificates from '@/components/certificates/certificates';
 import Contact from '@/components/contact/contact';
+import InfiniteSlider from '@/components/infiniteSlider/infiniteSlider';
 
 
 const Home = () => {
@@ -56,6 +57,9 @@ const Home = () => {
             </section>
             <section id="mibio">
                 <Mibio />
+            </section>
+            <section id="skills">
+                <InfiniteSlider/>
             </section>
             {isOpenSkills && <div className='gap-6 mt-5 p-10 fixed top-0 left-0 w-full h-full bg-light-whitecustom bg-opacity-60 flex items-center justify-center z-20'>
                 <Skills />
