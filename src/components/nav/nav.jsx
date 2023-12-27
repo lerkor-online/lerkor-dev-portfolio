@@ -24,8 +24,8 @@ const Nav = () => {
                         <li>
                             <a href="#mibio">Mi Bio</a>
                         </li>
-                        <li onClick={handleOpenSkills}>
-                            <a className=" cursor-pointer" >Skills</a>
+                        <li /* onClick={handleOpenSkills} */>
+                            <a href="#skills" className=" cursor-pointer" >Skills</a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCwDTMggF22osYfyiEikUCOQ">Proyectos</a>

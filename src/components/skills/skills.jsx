@@ -95,42 +95,55 @@ const skills = [
 
 const Skills = () => {
   const { handleCloseSkills } = useAppContext();
-    return (
-        <div className=" mt-6 ">
-          <div className=" flex justify-end items-end bg-gray-900 rounded-t-sm">
-
-          <button 
-          className=" flex justify-center items-center hover:bg-red-600 w-7 h-6 text-white hover:rounded-t-sm"
-          onClick={handleCloseSkills}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-</svg>
-          </button>
-          </div>
-          <div className="border-t-[3px] border-light-redbold">
-
-          <h1 className='flex text-center text-4xl items-center justify-center text-white '>Skills</h1>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-6 mt-4 p-1 ">
-  {skills.map(element => (
-    <div
-    key={element.id}
-    className=" w-28 h-32 flex justify-around flex-col p-4 shadow-light-blackcustom bg-gradient-to-b from-gray-500 via-gray-100 to-gray-500 shadow-2xl rounded-lg relative hover:transform hover:-translate-y-2 transition-transform duration-300"
+  return (
+    <div className="mt-6 bg-light-blackcustom dark:bg-dark-400 shadow-light-blackcustom shadow-xl">
+  <div className="flex justify-end items-end bg-gray-900 rounded-t-sm">
+    <button
+      className="flex justify-center items-center hover:bg-red-600 w-7 h-6 text-white hover:rounded-t-sm"
+      onClick={handleCloseSkills}
     >
-      <img
-      className="flex items-center justify-center"
-      src={element.imageUrl}
-      alt={element.name}
-      width={56}
-        height={56}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        className="bi bi-x-lg"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
         />
-      <span className="mt-2 text-custom text-shadow-custom font-bold">{element.name}</span>
-      <div className="absolute inset-0 bg-purple-500 opacity-0 rounded-lg hover:opacity-50 transition-opacity duration-300"></div>
-        </div>
-  ))}
+      </svg>
+    </button>
   </div>
+  <div className="border-t-[3px] border-light-redbold">
+    <h1 className="flex text-center text-4xl items-center justify-center text-white pt-4">
+      Skills
+    </h1>
+    <div className=" grid grid-cols-2 md:grid-cols-4 gap-4 p-8">
+      {skills.map((element) => (
+        <div
+          key={element.id}
+          className="w-full md:w-28 h-32 flex justify-around flex-col p-4 shadow-light-blackcustom bg-gradient-to-b from-gray-500 via-gray-100 to-gray-500 shadow-2xl rounded-lg relative hover:transform hover:-translate-y-2 transition-transform duration-300"
+        >
+          <Image
+            className="flex items-center justify-center"
+            src={element.imageUrl}
+            alt={element.name}
+            width={56}
+            height={56}
+          />
+          <span className="mt-2 text-custom text-shadow-custom font-bold">
+            {element.name}
+          </span>
+          <div className="absolute inset-0 bg-purple-500 opacity-0 rounded-lg hover:opacity-50 transition-opacity duration-300"></div>
+        </div>
+      ))}
+    </div>
   </div>
 </div>
-    )
+
+  )
 }
 
 export default Skills

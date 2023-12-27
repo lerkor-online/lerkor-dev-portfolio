@@ -58,12 +58,18 @@ const Home = () => {
             <section id="mibio">
                 <Mibio />
             </section>
-            <section id="skills">
-                <InfiniteSlider/>
+            <section id="skills" className='lg:h-20'>
             </section>
-            {isOpenSkills && <div className='gap-6 mt-5 p-10 fixed top-0 left-0 w-full h-full bg-light-whitecustom bg-opacity-60 flex items-center justify-center z-20'>
-                <Skills />
-            </div>}
+            <section>
+                <InfiniteSlider />
+            </section>
+            {isOpenSkills && (
+                <div className='fixed inset-0 flex items-center justify-center overflow-scroll'>
+                    <div className='w-full max-w-screen-sm bg-light-blackcustom bg-opacity-90 dark:bg-dark-200 dark:bg-opacity-60 z-50 p-4 md:p-6 mx-4 md:mx-auto rounded-lg'>
+                        <Skills />
+                    </div>
+                </div>
+            )}
             <section id="certificates">
                 <Certificates />
             </section>

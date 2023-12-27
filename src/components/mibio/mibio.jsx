@@ -5,7 +5,7 @@ import './mibio.css';
 
 const Mibio = () => {
   return (
-<div className='flex justify-center lg:m-32 m-2 items-center bg-light-whitecustom dark:bg-light-blackcustom'>
+<div className='lg:h-screen flex justify-center lg:m-32 m-2 items-center bg-light-whitecustom dark:bg-light-blackcustom'>
       <section>
       <Image 
         src={Avatar} 
