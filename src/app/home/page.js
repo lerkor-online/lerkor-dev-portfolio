@@ -9,6 +9,7 @@ import Mibio from '@/components/mibio/mibio';
 import Certificates from '@/components/certificates/certificates';
 import Contact from '@/components/contact/contact';
 import InfiniteSlider from '@/components/infiniteSlider/infiniteSlider';
+import GridProjects from '@/components/gridprojects/gridprojects';
 
 
 const Home = () => {
@@ -57,6 +58,9 @@ const Home = () => {
             </section>
             <section id="mibio">
                 <Mibio />
+            </section>
+            <section id="projects">
+                <GridProjects/>
             </section>
             <section id="skills" className='lg:h-20'>
             </section>
