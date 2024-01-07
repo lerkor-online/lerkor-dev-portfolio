@@ -61,7 +61,7 @@ const GridProjects = () => {
   }, []);
 
   return (
-    <section className='bg-light-blackcustom h-screen'>
+    <section className='bg-light-blackcustom'>
       <main className="main flow">
         <h1 className="main__heading">Projects</h1>
         <div className="main__cards cards">
