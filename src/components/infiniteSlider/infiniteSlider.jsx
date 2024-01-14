@@ -97,9 +97,9 @@ const InfiniteSlider = () => {
             {/* <Image src="https://githubunwrapped.com/walking-octocat.gif" 
             width={240} height={240} alt="walking-octocat"
             /> */}
-            <h1 className='text-3xl text-center text-light-blackcustom dark:text-light-whitecustom mb-6'>My Skills</h1>
+            <h1 className='pb-3 text-center text-4xl items-center justify-center text-light-blackcustom dark:text-light-whitecustom mb-6 section-title mt-20 md:mt-0'>MY SKILLS</h1>
             </div>
-            <div className='logos'>
+            <div className='logos relative z-30'>
                 <div className='logos-slide'>
                 {
                     skills.map((skill) => 

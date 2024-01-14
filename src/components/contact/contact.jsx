@@ -16,8 +16,8 @@ const Contact = () => {
   const [status, setStatus] = useState({});
 
   return (
-    <div className='bg-gray-100 dark:bg-light-blackcustom h-screen flex justify-center items-center'>
-      <div className='flex flex-col md:flex-row bg-white dark:bg-dark-200 p-8 rounded-lg shadow-md dark:shadow-dark-500'>
+    <div className='bg-gray-100 dark:bg-light-blackcustom h-screen flex justify-center md:items-center items-start mt-6 md:mt-0'> 
+      <div className='flex flex-col md:flex-row bg-white dark:bg-dark-200 p-8 rounded-lg shadow-md dark:shadow-dark-500 relative z-30'>
         <Image
           src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1701575286/contact_us_tnesqq.svg"
           alt="logo-contact"
@@ -55,7 +55,7 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className='w-full md:w-auto bg-light-redlight dark:bg-dark-600 font-bold text-light-whitecustom dark:text-dark-500 dark:hover:text-light-whitecustom p-2 rounded hover:bg-light-blackcustom dark:hover:bg-dark-100'
+              className='w-full md:w-auto bg-light-bluestrong dark:bg-dark-600 font-bold text-light-whitecustom dark:text-dark-500 dark:hover:text-light-whitecustom p-2 rounded hover:bg-light-blackcustom dark:hover:bg-dark-100'
             >
               Enviar
             </button>

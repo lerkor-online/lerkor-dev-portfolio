@@ -32,7 +32,7 @@ const NavEffect = () => {
           id="menu-backdrop"
           className=" 
                 absolute 
-                bg-gradient-to-b from-light-redlight dark:from-dark-100 via-light-redbold dark:via-dark-200 to-light-redblack dark:to-light-dark-300 
+                bg-gradient-to-b from-light-bluelight dark:from-dark-100 via-light-bluestrong dark:via-dark-200 to-light-blueblack dark:to-light-dark-300 
                 backdrop-blur-lg rounded
                 translate-x-[var(--left)] translate-y-[var(--top)]
                 left-0 top-0

@@ -61,9 +61,12 @@ const GridProjects = () => {
   }, []);
 
   return (
-    <section className='bg-light-blackcustom'>
+    <section 
+    className='bg-light-blackcustom pb-14 containerGrid'
+    style={{ clipPath: 'polygon(0 0, 100% 0, 100% 90%, 50% 100%, 50% 100%, 0 90%)' }}
+  >
       <main className="main flow">
-        <h1 className="main__heading">Projects</h1>
+        <h1 className="pb-3 text-center text-4xl items-center justify-center text-light-whitecustom mb-6 section-title">PROJECTS</h1>
         <div className="main__cards cards">
           <div className="cards__inner">
             <div className="cards__card card" data-card-id="1">

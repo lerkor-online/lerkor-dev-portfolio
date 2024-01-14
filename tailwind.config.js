@@ -21,6 +21,9 @@ module.exports = {
           rebstrong: '#F20505',
           whitecustom: '#F2F2F2',
           blackcustom: '#0D0D0D',
+          bluelight: '#B2C2DC',
+          bluestrong: '#784ba0',
+          blueblack: '#784ba0',
         },
         dark: {
           100: '#9305F2',

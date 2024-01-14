@@ -57,7 +57,7 @@ const NavBottom = () => {
   return (
 
 
-    <div class="navigation  bg-gradient-to-b from-light-redlight dark:from-dark-100 via-light-redlight dark:via-dark-300 to-light-redblack dark:to-dark-500">
+    <div class="navigation  bg-gradient-to-b from-light-bluelight dark:from-dark-100 via-light-bluestrong dark:via-dark-300 to-light-blueblack dark:to-dark-500">
       <ul>
         <li class="list">
           <button onClick={() => navigateToSection('mibio')}>
@@ -72,7 +72,7 @@ const NavBottom = () => {
           </button>
         </li>
         <li class="list">
-          <button>
+          <button onClick={() => navigateToSection('projects')}>
             <span class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
                 <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
@@ -117,7 +117,7 @@ const NavBottom = () => {
             <span class="circle"></span>
           </button>
         </li>
-        <div class="indicator  bg-gradient-to-b from-light-redlight dark:from-dark-100 via-light-redlight dark:via-dark-200 to-light-redblack dark:to-dark-500"></div>
+        <div class="indicator  bg-gradient-to-b from-light-bluelight dark:from-dark-100 via-light-bluestrong dark:via-dark-200 to-light-blueblack dark:to-dark-500"></div>
       </ul>
     </div>
 

@@ -8,16 +8,9 @@ ul {
   padding: 5em 1.5em;
 }
 
-.main__heading {
-  font-weight: 600;
-  font-size: 2.25em;
-  margin-bottom: 0.75em;
-  text-align: center;
-  color: #eceff1;
-}
-
 .cards {
   position: relative;
+  z-index: 10;
 }
 
 .cards__inner {
@@ -41,7 +34,8 @@ ul {
   align-items: start;
   gap: 1rem;
   color: #eceff1;
-  background-color: #2b2b2b;
+  /* background-color: #2b2b2b; */
+  background-color: transparent;
   border: 1px solid #eceff133;
   border-radius: 15px;
 

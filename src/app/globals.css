@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ProjectsFont';
+  src: url('/fonts/projects-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -22,6 +29,11 @@ html {
 .lerkor-title {
   /* Utiliza la fuente personalizada en el cuerpo del documento */
   font-family: 'LerkorDevFont', sans-serif;
+}
+
+.section-title {
+  /* Utiliza la fuente personalizada en el cuerpo del documento */
+  font-family: 'ProjectsFont', sans-serif;
 }
 
 .dark .lerkor-logo {

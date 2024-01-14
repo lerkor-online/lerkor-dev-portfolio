@@ -4,6 +4,7 @@ import { useAppContext } from '@/context/context';
 import React from "react";
 import NavEffect from "../navEffect/navEffect";
 import NavBottom from '../navbottom/navbottom';
+import ButtonDarkMode from '../buttonDarkMode/buttonDarkMode';
 
 
 const Nav = () => {
@@ -13,28 +14,36 @@ const Nav = () => {
         const html = document.querySelector("html");
         html.classList.toggle("dark");
     }
+
+    const navigateToSectionDesktop = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     return (
         <main>
             <header
                 id="landing-header"
-                className="py-4  px-10 item-center fixed top-0 w-full justify-between bg-neutral-900 border-b-[3px] border-light-rebstrong dark:border-dark-100 z-40 lg:block hidden"
+                className="py-2  px-10 item-center fixed top-0 w-full justify-between bg-neutral-900 border-b-[3px] border-light-bluestrong dark:border-dark-100 z-40 lg:block hidden"
             >
-                <nav className="flex flex-grow justify-center">
+                <nav className="flex flex-grow justify-between items-center">
+                    <div className='flex flex-grow basis-0'></div>
                     <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:text-gray-50">
                         <li>
-                            <a href="#mibio">Mi Bio</a>
+                            <a onClick={() => navigateToSectionDesktop('mibio')} className=" cursor-pointer">Mi Bio</a>
                         </li>
                         <li /* onClick={handleOpenSkills} */>
-                            <a href="#skills" className=" cursor-pointer" >Skills</a>
+                            <a onClick={() => navigateToSectionDesktop('skills')} className=" cursor-pointer" >Skills</a>
                         </li>
                         <li>
-                            <a href="#projects">Proyectos</a>
+                            <a onClick={() => navigateToSectionDesktop('projects')} className=" cursor-pointer">Proyectos</a>
                         </li>
                         <li>
-                            <a href="#certificates">Certificados</a>
+                            <a onClick={() => navigateToSectionDesktop('certificates')} className=" cursor-pointer">Certificados</a>
                         </li>
                         <li>
-                            <a href="#contact">Contacto</a>
+                            <a onClick={() => navigateToSectionDesktop('contact')} className=" cursor-pointer">Contacto</a>
                         </li>
                        {/*  <li>
                             <a href="#">
@@ -50,12 +59,13 @@ const Nav = () => {
                                 </svg>
                             </a>
                         </li> */}
-                        <li>
-                            <a onClick={handleDarkMode}>
-Dark Mode
-                            </a>
-                        </li>
+                        
+                    
                     </ul>
+                    <div className='flex flex-grow basis-0 justify-end items-center gap-3 text-light-whitecustom text-sm'>
+Dark Mode
+                            <ButtonDarkMode handleDarkMode={handleDarkMode} />
+                    </div>
                 </nav>
                 <nav>
                 </nav>
