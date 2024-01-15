@@ -69,26 +69,26 @@ const GridProjects = () => {
         <h1 className="pb-3 text-center text-4xl items-center justify-center text-light-whitecustom mb-6 section-title">PROJECTS</h1>
         <div className="main__cards cards ">
           <div className="cards__inner">
-            <div className="cards__card card" data-card-id="1">
+            <div className="cards__card card cursor-pointer" data-card-id="1" onClick={() => {window.open("https://mitsumichi-develop.vercel.app/", "_blank")}}>
             </div>
 
-            <div className="cards__card card" data-card-id="2">
+            <div className="cards__card card cursor-pointer" data-card-id="2" onClick={() => {window.open("https://www.youtube.com/watch?v=CGMr-mAaZys", "_blank")}}>
              <img
              className="absolute md:top-5 bottom-0"
              src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1704467060/Projects/Elixir%20Cars/elixir_cars_yurjbe.png" alt="cars_img" />
             </div>
-            <div className="cards__card card" data-card-id="3">
+            <div className="cards__card card cursor-pointer" data-card-id="3" onClick={() => {window.open("https://www.youtube.com/watch?v=HI3Dd0AKHSg", "_blank")}}>
               <img
                className="absolute top-3 md:h-36 h-32 flex justify-center items-center invert"
                src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1704327229/Projects/Countries%20App/countries_bmitnw.png" alt="countries_img" />
             </div>
-            <div className="cards__card card" data-card-id="4">
+            <div className="cards__card card cursor-pointer" data-card-id="4" onClick={() => {window.open("https://lerkor-dev.vercel.app/", "_blank")}}>
             </div>
 
-            <div className="cards__card card" data-card-id="5">
+            <div className="cards__card card cursor-pointer" data-card-id="5" onClick={() => {window.open("https://p-notes.vercel.app/home", "_blank")}}>
             </div>
 
-            <div className="cards__card card" data-card-id="6">
+            <div className="cards__card card cursor-pointer" data-card-id="6" onClick={() => {window.open("https://www.youtube.com/watch?v=0oYxL3dlthU", "_blank")}}>
               <img 
               className="absolute w-56 bottom-0 left-0"
               src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1704342377/Projects/KDA%20Parallax%20Effect/kda_fog_oju36x.png" alt="" />
@@ -96,7 +96,7 @@ const GridProjects = () => {
               className="absolute md:w-40 w-20 md:bottom-0 bottom-[4px] md:left-0 left-[-20px]"
               src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1704341548/Projects/KDA%20Parallax%20Effect/kaisa_kda_rd02hy.png" alt="" />
             </div>
-            <div className="cards__card card relative" data-card-id="7" style={{ perspective: '500px' }}>
+            <div className="cards__card card relative cursor-pointer" data-card-id="7" style={{ perspective: '500px' }} onClick={() => {window.open("https://www.youtube.com/watch?v=hgeebqlH2Y0", "_blank")}}>
   <img
     className="absolute md:top-[40px] top-[0px] md:left-[82px] left-[6px] rounded-full md:w-16 w-12  shadow-gray-800 shadow-md"
     style={{ transform: 'translate(-50%, -50%) rotateX(20deg) rotateY(30deg)' }}
