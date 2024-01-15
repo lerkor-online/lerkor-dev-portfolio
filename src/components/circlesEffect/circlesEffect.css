@@ -4,10 +4,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;   
+    overflow: hidden;
+    z-index: 2;   
 }
 
-.circles:before {
+/* .circles:before {
     bottom: 0;
     background: linear-gradient(to bottom , rgba(255, 255, 255, 0), #F2F2F2);   
 }
@@ -23,7 +24,7 @@
 
 .dark .circles:before {
     background: linear-gradient(to bottom , rgba(255, 255, 255, 0), #0D0D0D);   
-}
+} */
 
 .circles li{
     position: absolute;
@@ -35,6 +36,7 @@
     background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
     animation: animate 25s linear infinite;
     bottom: -150px;
+    z-index: 2;
 }
 
 .dark .circles li{

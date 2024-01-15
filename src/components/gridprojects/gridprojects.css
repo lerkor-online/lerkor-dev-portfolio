@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap");
-
 ul {
   list-style: none;
 }
@@ -9,8 +7,9 @@ ul {
 }
 
 .cards {
-  position: relative;
-  z-index: 10;
+  /* position: relative;
+  z-index: 9999;
+  background-color: aqua; */
 }
 
 .cards__inner {
@@ -36,8 +35,9 @@ ul {
   color: #eceff1;
   /* background-color: #2b2b2b; */
   background-color: transparent;
-  border: 1px solid #eceff133;
+  border: 1px solid ; /* #eceff133 */
   border-radius: 15px;
+  border-color: hsla(var(--hsl), 1);
 
 }
 
@@ -61,7 +61,7 @@ ul {
     background-size:contain;
     background-position: center;
     filter: brightness(0.6);
-    z-index: 10;
+    z-index: 60;
 }
 
 .card:nth-child(3) {
@@ -106,7 +106,7 @@ ul {
     background-size:contain;
     background-position: center;
     filter: brightness(0.6);
-    z-index: 10;
+
   }
   
   .card:nth-child(7) {
@@ -118,7 +118,7 @@ ul {
     background-size: contain;
     background-position: center;
   filter: brightness(0.6);
-  z-index: 10;
+ 
   }
 
 
@@ -147,20 +147,6 @@ ul {
 
 .flow > * + * {
   margin-top: var(--flow-space, 1.25em);
-}
-
-.cta {
-  display: block;
-  align-self: end;
-  margin: 1em 0 0.5em 0;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #0d0d0d;
-  padding: 0.7em;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
 }
 
 .overlay {
@@ -204,7 +190,7 @@ ul {
 
 :not(.overlay) > .card:hover {
   --lightness: 95%;
-/*   background: hsla(var(--hsl), 0.1); */
+  /* background: hsla(var(--hsl), 0.1); */
 }
 
 @media screen and (max-width: 600px) {

@@ -62,24 +62,24 @@ const GridProjects = () => {
 
   return (
     <section 
-    className='bg-light-blackcustom pb-14 containerGrid'
+    className='bg-light-blackcustom pb-14 relative z-10'
     style={{ clipPath: 'polygon(0 0, 100% 0, 100% 90%, 50% 100%, 50% 100%, 0 90%)' }}
   >
       <main className="main flow">
         <h1 className="pb-3 text-center text-4xl items-center justify-center text-light-whitecustom mb-6 section-title">PROJECTS</h1>
-        <div className="main__cards cards">
+        <div className="main__cards cards ">
           <div className="cards__inner">
             <div className="cards__card card" data-card-id="1">
             </div>
 
             <div className="cards__card card" data-card-id="2">
              <img
-             className="absolute z-10 md:top-5 bottom-0"
+             className="absolute md:top-5 bottom-0"
              src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1704467060/Projects/Elixir%20Cars/elixir_cars_yurjbe.png" alt="cars_img" />
             </div>
             <div className="cards__card card" data-card-id="3">
               <img
-               className="absolute top-3 md:h-36 h-32  z-10 flex justify-center items-center invert"
+               className="absolute top-3 md:h-36 h-32 flex justify-center items-center invert"
                src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1704327229/Projects/Countries%20App/countries_bmitnw.png" alt="countries_img" />
             </div>
             <div className="cards__card card" data-card-id="4">
@@ -90,15 +90,15 @@ const GridProjects = () => {
 
             <div className="cards__card card" data-card-id="6">
               <img 
-              className="absolute z-10 w-56 bottom-0 left-0"
+              className="absolute w-56 bottom-0 left-0"
               src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1704342377/Projects/KDA%20Parallax%20Effect/kda_fog_oju36x.png" alt="" />
               <img
-              className="absolute z-10 md:w-40 w-20 md:bottom-0 bottom-[4px] md:left-0 left-[-20px]"
+              className="absolute md:w-40 w-20 md:bottom-0 bottom-[4px] md:left-0 left-[-20px]"
               src="https://res.cloudinary.com/dqcn7idzj/image/upload/v1704341548/Projects/KDA%20Parallax%20Effect/kaisa_kda_rd02hy.png" alt="" />
             </div>
             <div className="cards__card card relative" data-card-id="7" style={{ perspective: '500px' }}>
   <img
-    className="absolute md:top-[40px] top-[0px] md:left-[82px] left-[6px] rounded-full md:w-16 w-12  shadow-gray-800 shadow-md z-10"
+    className="absolute md:top-[40px] top-[0px] md:left-[82px] left-[6px] rounded-full md:w-16 w-12  shadow-gray-800 shadow-md"
     style={{ transform: 'translate(-50%, -50%) rotateX(20deg) rotateY(30deg)' }}
     src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
     alt="rick_avatar"
@@ -116,7 +116,7 @@ const GridProjects = () => {
     alt="mr_Meeseeks_avatar"
   />
   <img
-    className="absolute bottom-[-42px] right-[-40px] rounded-full md:w-16 w-12 shadow-gray-800 shadow-md z-50"
+    className="absolute bottom-[-42px] right-[-40px] rounded-full md:w-16 w-12 shadow-gray-800 shadow-md"
     style={{ transform: 'translate(-50%, -50%) rotateX(-22deg) rotateY(-62deg)' }}
     src="https://rickandmortyapi.com/api/character/avatar/265.jpeg"
     alt="picke_rick_avatar"
