@@ -3,7 +3,7 @@ import './circlesEffect.css'
 
 const CirclesEffect = () => {
   return (
-    <div className='fixed top-0 left-0 w-full h-full z-[2]'>
+    <div className='fixed top-0 left-0 w-full h-full'>
         <ul className='circles'>
         <li></li>
         <li></li>
